@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# Calculator App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./assets/screenshot.png" alt="Screenshot of app" width="300" />
 
-Currently, two official plugins are available:
+This is a simple but fully functional calculator application built with **React** and **TypeScript**.  
+The project is based on a Vanilla JavaScript version that I originally developed three months ago as a JavaScript exercise.  
+Since I am currently learning React, I refactored the entire project into **React + TypeScript**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my **second TypeScript project** and my **first React project**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Basic arithmetic operations: addition, subtraction, multiplication, division  
+- Toggle sign (+/-)  
+- Decimal support  
+- Delete last digit (DEL)  
+- Full reset (C)  
+- Calculation via `=`  
+- Display of the last operation  
+- Component-based architecture  
+- Fully typed with TypeScript  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React  
+- TypeScript
+- TailwindC
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Setup & Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Project Structure
+
+- `App.tsx` – main calculator logic and state management  
+- `components/` – reusable UI components (buttons, labels, containers)  
+- `types/` – type definitions such as operators  
+- `styles/` – styling  
+
+---
+
+## Notes
+
+This project helped me understand:
+
+- how to manage state in React  
+- how to refactor JS logic into TS  
+- how to structure UI components  
+- how to handle numeric state updates correctly  
+
+More improvements may follow as I continue learning React and TypeScript.
