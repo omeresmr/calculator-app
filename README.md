@@ -28,7 +28,7 @@ This is my **second TypeScript project** and my **first React project**.
 
 - React  
 - TypeScript
-- TailwindC
+- TailwindCSS
 
 ---
 
